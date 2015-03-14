@@ -25,5 +25,9 @@ package mx.compi;
  * @author juliobitar
  */
 public class proyCompi {
+    private static final int FIN_SENT = ';';
+    private static final int CONCA = '&';
+    private static final int ALTER = '|';
+    private static final int EOF = '.';
     
 }
