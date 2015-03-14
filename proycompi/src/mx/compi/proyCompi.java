@@ -37,4 +37,24 @@ public class proyCompi {
     private Token currentToken;
     private String salida = "";
     
+    public void paser(){
+        this.currentToken = lex();
+        prod();
+        if(this.currentToken.getToken() == EOF){
+            System.out.println(String.format("El resultado : %s", this.salida));
+        }
+    }
+    public void prod(){
+        conjProd();
+        if(!(this.currentToken.getToken() == FIN_SENT)){
+            throw new Error(String.format("\nError de sintaxis: se esperaba '%s'",
+                    (char)FIN_SENT));
+          }
+    }
+    public void conjProd(){
+        
+        
+        
+    }
+    
 }
