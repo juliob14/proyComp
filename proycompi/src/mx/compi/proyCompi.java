@@ -1,6 +1,8 @@
 
 package mx.compi;
 
+import java.util.StringTokenizer;
+
 /**
  * <ul>
  *<li> Prog →  conjProd</li>
@@ -29,5 +31,10 @@ public class proyCompi {
     private static final int CONCA = '&';
     private static final int ALTER = '|';
     private static final int EOF = '.';
+    
+    private Integer linea = 1; 
+    private StringTokenizer tokenizer = null;
+    private Token currentToken;
+    private String salida = "";
     
 }
