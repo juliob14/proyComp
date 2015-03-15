@@ -23,6 +23,8 @@ import java.util.StringTokenizer;
  * E)Definicion: Se representa por la secuencia de caracteres  ' ::= '
  * F)Fin de produccion: Caracter ' ; ' 
  * G)fin de archivo: caracter '.'
+ * 
+ * VARIABLE cualquier cosa que inicie con letra
  * </ul>
  * @author juliobitar
  */
@@ -44,17 +46,15 @@ public class proyCompi {
             System.out.println(String.format("El resultado : %s", this.salida));
         }
     }
-    public void prod(){
+    public void prog (){
         conjProd();
-        if(!(this.currentToken.getToken() == FIN_SENT)){
-            throw new Error(String.format("\nError de sintaxis: se esperaba '%s'",
-                    (char)FIN_SENT));
-          }
-    }
-    public void conjProd(){
-        
-        
-        
-    }
+}
+   public void conjProd(){
+       prod();
+       if()
+       
+       
+   }
+    
     
 }
